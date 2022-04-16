@@ -2,6 +2,10 @@
 Started on 18/04/2022
 ## Day 0 - Preparing project 
 
-## Day 1 - Review 
+**Today's Progress**
 
-1. Review all unity material that I've learned
+**Thoughts:**  
+
+**Link to work:** 
+
+---
