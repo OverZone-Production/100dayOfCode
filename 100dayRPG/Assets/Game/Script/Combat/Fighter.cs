@@ -48,14 +48,7 @@ namespace TheRPG.Combat
         private void AttackAction()
         {
             Animator animator = GetComponent<Animator>();
-            if (weaponRange >= 12)
-            {
-                animator.SetTrigger("attack");
-            }
-            else
-            {
-                animator.SetTrigger("attack");
-            }
+            animator.SetTrigger("attack");
         }
 
         public bool CanAttack(GameObject combatTarget)

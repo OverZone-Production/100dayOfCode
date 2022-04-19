@@ -17,3 +17,13 @@ Started on 18/04/2022
 **Thoughts:** - At first I thought it would be done in a few minute but it ended up taking quite a long time to fully set up
 
 **Link to work:** 
+
+---
+
+## Day 2 - April 19, 2022 
+
+**Today's Progress:** - Finish setting up the player and camera
+
+**Thoughts:** - finally set up the camera to actually looking at the play instead of the blank terrain
+
+**Link to work:** 
