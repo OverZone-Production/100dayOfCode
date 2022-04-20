@@ -52,7 +52,7 @@ namespace TheRPG.Movement
             Vector3 localVelocity = transform.InverseTransformDirection(velocity);
 
             float speed = localVelocity.z;
-            GetComponent<Animator>().SetFloat("forwardspeed", speed);
+            GetComponent<Animator>().SetFloat("forwardSpeed", speed);
         }
 
 

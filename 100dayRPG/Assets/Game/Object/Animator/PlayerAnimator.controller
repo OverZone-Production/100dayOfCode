@@ -110,7 +110,7 @@ AnimatorController:
   m_Name: PlayerAnimator
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: forwardspeed
+  - m_Name: forwardSpeed
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -179,7 +179,7 @@ BlendTree:
     m_CycleOffset: 0
     m_DirectBlendParameter: forwardspeed
     m_Mirror: 0
-  m_BlendParameter: forwardspeed
+  m_BlendParameter: forwardSpeed
   m_BlendParameterY: forwardspeed
   m_MinThreshold: 0
   m_MaxThreshold: 1
@@ -277,7 +277,7 @@ AnimatorStateMachine:
     m_Position: {x: 430, y: 110, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -8048186916786654969}
-    m_Position: {x: 450, y: 260, z: 0}
+    m_Position: {x: 430, y: 260, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -8685466514006621642}
     m_Position: {x: 430, y: 20, z: 0}
