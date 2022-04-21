@@ -48,3 +48,13 @@ TheRPG.Core.FollowCamera.LateUpdate () (at Assets/Game/Script/Core/FollowCamera.
 I don't really know what I mess up so I will create a new project and redo all my work but right now I so pissed off
 
 **Link to work:** 
+
+---
+
+## Day 4 - April 20, 2022 
+
+**Today's Progress:** - Redo everything
+
+**Thoughts:** - because of the error yesterday, I created a new project and start over but I already finish the player and camera now I'm having trouble with the eneny not attacking the player
+
+**Link to work:** 
