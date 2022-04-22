@@ -8,6 +8,7 @@ namespace TheRPG.Combat
     public class Health : MonoBehaviour
     {
         [SerializeField] float HP = 100f;
+        [SerializeField] float maxHP = 100f;
         private bool isDead = false;
 
         public void TakeDamage(float damage)
@@ -19,6 +20,20 @@ namespace TheRPG.Combat
             {
                 Die();
             }
+        }
+
+        public void gainHealth(float healed)
+        {
+            HP += healed;
+            if (HP > maxHP)
+            {
+                HP = maxHP;
+            }
+        }
+
+        public void increaseHealthCap(float cap)
+        {
+            maxHP += cap;
         }
 
         public bool GetIsDead()

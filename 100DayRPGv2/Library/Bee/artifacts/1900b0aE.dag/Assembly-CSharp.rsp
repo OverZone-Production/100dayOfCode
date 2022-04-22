@@ -321,6 +321,7 @@
 "Assets/Game/Script/Combat/CombatTarget.cs"
 "Assets/Game/Script/Combat/Fighter.cs"
 "Assets/Game/Script/Combat/Health.cs"
+"Assets/Game/Script/Combat/Level.cs"
 "Assets/Game/Script/Controller/EnemyController.cs"
 "Assets/Game/Script/Controller/PlayerController.cs"
 "Assets/Game/Script/Controller/WayPoints.cs"
@@ -328,6 +329,7 @@
 "Assets/Game/Script/Core/FollowCamera.cs"
 "Assets/Game/Script/Core/IAction.cs"
 "Assets/Game/Script/Movement/Mover.cs"
+"Assets/Game/Script/PickUp/PickUp.cs"
 -langversion:8.0
 
 /deterministic

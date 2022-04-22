@@ -53,16 +53,18 @@
     <UnityVersion>2021.1.25f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Game\Script\Core\FollowCamera.cs" />
-    <Compile Include="Assets\Game\Script\Controller\EnemyController.cs" />
-    <Compile Include="Assets\Game\Script\Movement\Mover.cs" />
-    <Compile Include="Assets\Game\Script\Combat\CombatTarget.cs" />
-    <Compile Include="Assets\Game\Script\Controller\PlayerController.cs" />
-    <Compile Include="Assets\Game\Script\Core\IAction.cs" />
-    <Compile Include="Assets\Game\Script\Combat\Health.cs" />
-    <Compile Include="Assets\Game\Script\Core\ActionScheduler.cs" />
-    <Compile Include="Assets\Game\Script\Controller\WayPoints.cs" />
     <Compile Include="Assets\Game\Script\Combat\Fighter.cs" />
+    <Compile Include="Assets\Game\Script\Core\IAction.cs" />
+    <Compile Include="Assets\Game\Script\Combat\CombatTarget.cs" />
+    <Compile Include="Assets\Game\Script\Controller\WayPoints.cs" />
+    <Compile Include="Assets\Game\Script\Core\ActionScheduler.cs" />
+    <Compile Include="Assets\Game\Script\Controller\PlayerController.cs" />
+    <Compile Include="Assets\Game\Script\Controller\EnemyController.cs" />
+    <Compile Include="Assets\Game\Script\Combat\Health.cs" />
+    <Compile Include="Assets\Game\Script\Core\FollowCamera.cs" />
+    <Compile Include="Assets\Game\Script\Movement\Mover.cs" />
+    <Compile Include="Assets\Game\Script\Combat\Level.cs" />
+    <Compile Include="Assets\Game\Script\PickUp\PickUp.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

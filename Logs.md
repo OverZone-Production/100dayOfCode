@@ -51,10 +51,20 @@ I don't really know what I mess up so I will create a new project and redo all m
 
 ---
 
-## Day 4 - April 20, 2022 
+## Day 4 - April 21, 2022 
 
 **Today's Progress:** - Redo everything
 
 **Thoughts:** - because of the error yesterday, I created a new project and start over but I already finish the player and camera now I'm having trouble with the eneny not attacking the player
+
+**Link to work:** 
+
+---
+
+## Day 5 - April 22, 2022 
+
+**Today's Progress:** - Exp system & pickup: setting how the exp system will work and making prefab for a health box
+
+**Thoughts:** - 
 
 **Link to work:** 

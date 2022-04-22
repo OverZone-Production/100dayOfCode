@@ -84,6 +84,11 @@ namespace TheRPG.Combat
                 target.GetComponent<Health>().TakeDamage(weaponDamage);
             }
         }
+
+        public void DamageBoost(float boost)
+        {
+            weaponDamage += boost;
+        }
     }
 }
 
