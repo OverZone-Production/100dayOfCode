@@ -58,6 +58,7 @@
     <Compile Include="Assets\Game\Script\Combat\CombatTarget.cs" />
     <Compile Include="Assets\Game\Script\Controller\WayPoints.cs" />
     <Compile Include="Assets\Game\Script\Core\ActionScheduler.cs" />
+    <Compile Include="Assets\Game\Script\Combat\DropExp.cs" />
     <Compile Include="Assets\Game\Script\Controller\PlayerController.cs" />
     <Compile Include="Assets\Game\Script\Controller\EnemyController.cs" />
     <Compile Include="Assets\Game\Script\Combat\Health.cs" />
@@ -65,6 +66,8 @@
     <Compile Include="Assets\Game\Script\Movement\Mover.cs" />
     <Compile Include="Assets\Game\Script\Combat\Level.cs" />
     <Compile Include="Assets\Game\Script\PickUp\PickUp.cs" />
+    <Compile Include="Assets\Game\Script\Combat\mpSystem.cs" />
+    <Compile Include="Assets\Game\Script\Combat\specialMove.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

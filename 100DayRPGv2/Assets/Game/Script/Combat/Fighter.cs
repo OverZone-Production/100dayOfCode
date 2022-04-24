@@ -8,10 +8,12 @@ namespace TheRPG.Combat
 {
     public class Fighter : MonoBehaviour, IAction
     {
+        [SerializeField] float atk = 5;
+        [SerializeField] float def = 10;
         [SerializeField] float weaponRange = 2f;
         [SerializeField] float weaponDamage = 5f;
         [SerializeField] float timeBetweenAttack = 1f;
-
+        [SerializeField] float targetDef = 0f;
         Transform target;
         float timeSinceLastAttack = Mathf.Infinity;
 
@@ -59,6 +61,11 @@ namespace TheRPG.Combat
             return targetHealth != null && !targetHealth.GetIsDead();
         }
 
+        public float GetDef()
+        {
+            return def;
+        }
+
         private bool GetIsInRange()
         {
             return Vector3.Distance(transform.position, target.position) < weaponRange;
@@ -70,9 +77,15 @@ namespace TheRPG.Combat
             target = combatTarget.transform;
         }
 
+        public void GetTargetDef(GameObject combatTarget)
+        {
+            targetDef = combatTarget.GetComponent<Fighter>().GetDef();
+        }
+
         public void Cancel()
         {
             GetComponent<Animator>().SetTrigger("stopAttack");
+            targetDef = 0;
             target = null;
         }
 
@@ -81,13 +94,19 @@ namespace TheRPG.Combat
         {
             if (target != null)
             {
-                target.GetComponent<Health>().TakeDamage(weaponDamage);
+                float totalDamage = weaponDamage + atk - targetDef;
+                target.GetComponent<Health>().TakeDamage(totalDamage);
             }
         }
 
         public void DamageBoost(float boost)
         {
-            weaponDamage += boost;
+            atk += boost;
+        }
+
+        public void DefenseBoost(float boost)
+        {
+            def += boost;
         }
     }
 }

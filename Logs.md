@@ -68,3 +68,24 @@ I don't really know what I mess up so I will create a new project and redo all m
 **Thoughts:** - 
 
 **Link to work:** 
+
+---
+
+## Day 6 - April 23, 2022 
+
+**Today's Progress:** - Level cap & changing the attack system
+
+**Thoughts:** - 1. I change the damage formula from (Health - attack) to (Health + Defense - Attack) 2. I create a system the make you have to expand your level cap to gain more level
+
+
+**Link to work:** 
+
+---
+
+## Day 7 - April 24, 2022 
+
+**Today's Progress:** - Fixing attack and defense & MP system
+
+**Thoughts:** - found error in the attack and defense system so I fixed it. I want my player to have some special moveset and have an MP system
+
+**Link to work:**

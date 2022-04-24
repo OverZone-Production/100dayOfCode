@@ -8,18 +8,30 @@ namespace TheRPG.Combat
 {
     public class Level : MonoBehaviour
     {
+        [SerializeField] int levelCap = 10;
         [SerializeField] int level = 1;
         [SerializeField] int curExp = 0;
         [SerializeField] int toNextLevel = 15;
         
         public void GainExp(int exp)
         {
-            curExp += exp;
-            if (curExp >= toNextLevel)
+            if (level < levelCap)
             {
-                level++;
-                GetComponent<Fighter>().DamageBoost(2);
-                GetComponent<Health>().increaseHealthCap(10);
+                curExp += exp;
+                if (curExp >= toNextLevel)
+                {
+                    int carry = curExp - toNextLevel;
+                    level++;
+                    GetComponent<Fighter>().DamageBoost(2);
+                    GetComponent<Fighter>().DefenseBoost(2);
+                    GetComponent<Health>().increaseHealthCap(10);
+                    curExp = carry;
+                    toNextLevel += 15;
+                }
+            }
+            else
+            {
+                curExp = 0;
             }
         }
     }
