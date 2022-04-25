@@ -9,6 +9,7 @@ namespace TheRPG.Combat
     {
         [SerializeField] int MP = 50;
         [SerializeField] int maxMP = 50;
+        private int baseAttack;
         void Update()
         {
             Slot1();
@@ -26,11 +27,22 @@ namespace TheRPG.Combat
 
         private void Slot1()
         {
-            
+            if (Input.GetButtonDown("Slot1"))
+            {
+                MP -= 10;
+                print("::");
+                BoostAttack();
+                Invoke("ResetAttack", 5);
+            }
         }
         private void BoostAttack()
         {
             GetComponent<Fighter>().DamageBoost(10);
+        }
+
+        private void ResetAttack()
+        {
+            GetComponent<Fighter>().DamageBoost(-10);
         }
 
     }

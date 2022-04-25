@@ -89,3 +89,12 @@ I don't really know what I mess up so I will create a new project and redo all m
 **Thoughts:** - found error in the attack and defense system so I fixed it. I want my player to have some special moveset and have an MP system
 
 **Link to work:**
+
+---
+
+## Day 8 - April 25, 2022 
+
+**Today's Progress:** - Upgrade pickup system; creating 1 script that work for all type of pickup
+
+**Thoughts:** - 
+**Link to work:**

@@ -8,8 +8,8 @@ namespace TheRPG.Combat
 {
     public class Fighter : MonoBehaviour, IAction
     {
-        [SerializeField] float atk = 5;
-        [SerializeField] float def = 10;
+        [SerializeField] int atk = 5;
+        [SerializeField] int def = 10;
         [SerializeField] float weaponRange = 2f;
         [SerializeField] float weaponDamage = 5f;
         [SerializeField] float timeBetweenAttack = 1f;
@@ -99,12 +99,12 @@ namespace TheRPG.Combat
             }
         }
 
-        public void DamageBoost(float boost)
+        public void DamageBoost(int boost)
         {
             atk += boost;
         }
 
-        public void DefenseBoost(float boost)
+        public void DefenseBoost(int boost)
         {
             def += boost;
         }
