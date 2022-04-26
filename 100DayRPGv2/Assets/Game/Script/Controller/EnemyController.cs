@@ -32,8 +32,11 @@ namespace TheRPG.Controller
 
         private void Update()
         {
-            if (health.GetIsDead()) return;
-
+            if (health.GetIsDead())
+            {
+                HideObject();
+                return;
+            }
             if (DistanceToPlayer() && fighter.CanAttack(player))
             {
                 timeLastSawPlayer = 0;
@@ -43,44 +46,11 @@ namespace TheRPG.Controller
             {
                 SuspicionBehavior();
             }
-            else
-            {
-                WayPointsBehavior();
-            }
         }
 
-        private void WayPointsBehavior()
+        private void HideObject()
         {
-            Vector3 nextPosition = transform.position;
-            if (wayPoints != null)
-            {
-                if (AtWayPoint())
-                {
-                    loopWayPoint();
-                }
-                nextPosition = GetCurrentWayPoint();
-            }
-
-            mover.StartMove(nextPosition);
-
-        }
-
-        private void loopWayPoint()
-        {
-            curWayPointIndex = wayPoints.GetNextIndex(curWayPointIndex);
-        }
-
-        private bool AtWayPoint()
-        {
-            float distanceToWayPoint = Vector3.Distance(transform.position, 
-                GetCurrentWayPoint());
-
-            return distanceToWayPoint < 1f;
-        }
-
-        private Vector3 GetCurrentWayPoint()
-        {
-            return wayPoints.GetPoint(curWayPointIndex);
+            gameObject.SetActive(false);
         }
 
         private void SuspicionBehavior()

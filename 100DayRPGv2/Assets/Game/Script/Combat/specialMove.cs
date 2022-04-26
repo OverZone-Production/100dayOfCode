@@ -32,7 +32,7 @@ namespace TheRPG.Combat
                 MP -= 10;
                 print("::");
                 BoostAttack();
-                Invoke("ResetAttack", 5);
+                Invoke("ResetAttack", 10);
             }
         }
         private void BoostAttack()

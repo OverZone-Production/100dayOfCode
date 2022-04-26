@@ -97,4 +97,15 @@ I don't really know what I mess up so I will create a new project and redo all m
 **Today's Progress:** - Upgrade pickup system; creating 1 script that work for all type of pickup
 
 **Thoughts:** - 
+
+**Link to work:**
+
+---
+
+## Day 9 - April 26, 2022 
+
+**Today's Progress:** - Interaction part 1
+
+**Thoughts:** - I search up turtorial for interaction but it make me redo the movement script
+
 **Link to work:**

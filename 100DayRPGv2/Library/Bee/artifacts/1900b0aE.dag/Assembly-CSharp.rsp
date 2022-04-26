@@ -334,6 +334,10 @@
 "Assets/Game/Script/Core/IAction.cs"
 "Assets/Game/Script/Movement/Mover.cs"
 "Assets/Game/Script/PickUp/PickUp.cs"
+"Assets/Testing/Script/CameraController.cs"
+"Assets/Testing/Script/Controller/PlayerController.cs"
+"Assets/Testing/Script/Interactable.cs"
+"Assets/Testing/Script/Movement/PlayerMotor.cs"
 -langversion:8.0
 
 /deterministic
