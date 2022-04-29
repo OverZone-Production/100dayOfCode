@@ -119,3 +119,23 @@ I don't really know what I mess up so I will create a new project and redo all m
 **Thoughts:** - 
 
 **Link to work:**
+
+---
+
+## Day 11 - April 28, 2022 
+
+**Today's Progress:** - Inventory UI 
+
+**Thoughts:** - 
+
+**Link to work:**
+
+---
+
+## Day 12 - April 29, 2022 
+
+**Today's Progress:** - Inventory System 
+
+**Thoughts:** - 
+
+**Link to work:**

@@ -3,6 +3,7 @@ using UnityEngine;
 public class Interactable : MonoBehaviour
 {
     public float radius = 3f;
+    public Transform interactionTransform;
 
     bool isFocus = false;
     Transform player;
@@ -11,7 +12,7 @@ public class Interactable : MonoBehaviour
 
     public virtual void Interact()
     {
-        Debug.Log("Interacting with" + transform.name);
+        Debug.Log("Interacting with" + interactionTransform.name);
     }
 
     void Update()
@@ -43,7 +44,12 @@ public class Interactable : MonoBehaviour
 
     void OnDrawGizmos()
     {
+        if (interactionTransform == null)
+        {
+            interactionTransform = transform;
+        }
+
         Gizmos.color = Color.yellow;
-        Gizmos.DrawWireSphere(transform.position, radius);
+        Gizmos.DrawWireSphere(interactionTransform.position, radius);
     }
 }
