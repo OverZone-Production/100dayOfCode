@@ -15,6 +15,7 @@ public class EquipmentManager : MonoBehaviour
 
     #endregion
 
+    public Equipment[] defaultItems;
     public SkinnedMeshRenderer targetMesh;
     Equipment[] currentEquipment;
     SkinnedMeshRenderer[] currentMeshes;
@@ -31,13 +32,14 @@ public class EquipmentManager : MonoBehaviour
         int numSlots = System.Enum.GetNames(typeof(EquipmentSlot)).Length;
         currentEquipment = new Equipment[numSlots];
         currentMeshes = new SkinnedMeshRenderer[numSlots];
+
+        EquipDefaultItems();
     }
 
     public void Equip (Equipment newItem)
     {
         int slotIndex = (int)newItem.equipSlot;
-
-        Equipment oldItem = null;
+        Equipment oldItem = Unequip(slotIndex);
 
         if (currentEquipment[slotIndex] != null)
         {
@@ -61,7 +63,7 @@ public class EquipmentManager : MonoBehaviour
         currentMeshes[slotIndex] = newMesh;
     }
 
-    public void Unequip(int slotIndex)
+    public Equipment Unequip(int slotIndex)
     {
         if (currentEquipment[slotIndex] != null)
         {
@@ -79,8 +81,9 @@ public class EquipmentManager : MonoBehaviour
             {
                 onEquipmentChanged.Invoke(null, oldItem);
             }
+            return oldItem;
         }
-
+        return null;
     }
 
     public void UnequipAll()
@@ -89,6 +92,7 @@ public class EquipmentManager : MonoBehaviour
         {
             Unequip(i);
         }
+        EquipDefaultItems();
     }
 
     void SetEquipmentBlendShapes(Equipment item, int weight)
@@ -96,6 +100,14 @@ public class EquipmentManager : MonoBehaviour
         foreach(EquipmentMeshRegion blendShape in item.coveredMeshRegion)
         {
             targetMesh.SetBlendShapeWeight((int)blendShape, weight);
+        }
+    }
+
+    void EquipDefaultItems()
+    {
+        foreach (Equipment item in defaultItems)
+        {
+            Equip(item);
         }
     }
 

@@ -340,6 +340,7 @@
 "Assets/Testing/Script/Controller/PlayerController.cs"
 "Assets/Testing/Script/Equipment.cs"
 "Assets/Testing/Script/EquipmentManager.cs"
+"Assets/Testing/Script/Helper/ConvertToRegularMesh.cs"
 "Assets/Testing/Script/Interactable.cs"
 "Assets/Testing/Script/Inventory/Inventory.cs"
 "Assets/Testing/Script/Inventory/InventorySlot.cs"
