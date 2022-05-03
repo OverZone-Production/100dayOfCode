@@ -77,11 +77,14 @@
     <Compile Include="Assets\Testing\Script\Inventory\InventorySlot.cs" />
     <Compile Include="Assets\Testing\Script\Inventory\InventoryUI.cs" />
     <Compile Include="Assets\Testing\Script\Inventory\Inventory.cs" />
+    <Compile Include="Assets\Testing\Script\Helper\ConvertToRegularMesh.cs" />
     <Compile Include="Assets\Game\Script\Combat\Level.cs" />
     <Compile Include="Assets\Game\Script\Combat\PickUpType.cs" />
     <Compile Include="Assets\Testing\Script\Item\Item.cs" />
     <Compile Include="Assets\Game\Script\PickUp\PickUp.cs" />
-    <Compile Include="Assets\Testing\Script\Helper\ConvertToRegularMesh.cs" />
+    <Compile Include="Assets\Testing\Script\Stat\CharacterStat.cs" />
+    <Compile Include="Assets\Testing\Script\Stat\Stat.cs" />
+    <Compile Include="Assets\Testing\Script\Stat\PlayerStat.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

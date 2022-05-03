@@ -162,9 +162,19 @@ I don't really know what I mess up so I will create a new project and redo all m
 
 ---
 
-## Day 15 - May 1, 2022 
+## Day 15 - May 2, 2022 
 
 **Today's Progress:** - Equipment/Default Equipment/ Convert mesh for Equipment pickup
+
+**Thoughts:** - 
+
+**Link to work:**
+
+---
+
+## Day 16 - May 3, 2022 
+
+**Today's Progress:** - Player Stat
 
 **Thoughts:** - 
 

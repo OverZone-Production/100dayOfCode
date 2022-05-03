@@ -348,6 +348,9 @@
 "Assets/Testing/Script/Item/Item.cs"
 "Assets/Testing/Script/Item/ItemPickUp.cs"
 "Assets/Testing/Script/Movement/PlayerMotor.cs"
+"Assets/Testing/Script/Stat/CharacterStat.cs"
+"Assets/Testing/Script/Stat/PlayerStat.cs"
+"Assets/Testing/Script/Stat/Stat.cs"
 -langversion:8.0
 
 /deterministic
