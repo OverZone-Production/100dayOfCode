@@ -179,3 +179,13 @@ I don't really know what I mess up so I will create a new project and redo all m
 **Thoughts:** - 
 
 **Link to work:**
+
+---
+
+## Day 17 - May 4, 2022 
+
+**Today's Progress:** - Eneny AI & Player Combat
+
+**Thoughts:** - 
+
+**Link to work:**

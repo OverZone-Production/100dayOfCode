@@ -59,7 +59,7 @@
     <Compile Include="Assets\Testing\Script\CharacterAnimator.cs" />
     <Compile Include="Assets\Testing\Script\Equipment.cs" />
     <Compile Include="Assets\Game\Script\Controller\WayPoints.cs" />
-    <Compile Include="Assets\Testing\Script\CameraController.cs" />
+    <Compile Include="Assets\Testing\Script\Controller\CameraController.cs" />
     <Compile Include="Assets\Game\Script\Core\ActionScheduler.cs" />
     <Compile Include="Assets\Game\Script\Combat\DropExp.cs" />
     <Compile Include="Assets\Testing\Script\Controller\PlayerController.cs" />
@@ -67,11 +67,13 @@
     <Compile Include="Assets\Testing\Script\Interactable.cs" />
     <Compile Include="Assets\Game\Script\Controller\PlayerController.cs" />
     <Compile Include="Assets\Game\Script\Controller\EnemyController.cs" />
+    <Compile Include="Assets\Testing\Script\Stat\CharacterStat.cs" />
     <Compile Include="Assets\Testing\Script\Item\ItemPickUp.cs" />
     <Compile Include="Assets\Game\Script\Combat\mpSystem.cs" />
     <Compile Include="Assets\Game\Script\Combat\specialMove.cs" />
     <Compile Include="Assets\Game\Script\Combat\Health.cs" />
     <Compile Include="Assets\Game\Script\Core\FollowCamera.cs" />
+    <Compile Include="Assets\Testing\Script\Stat\PlayerStat.cs" />
     <Compile Include="Assets\Testing\Script\EquipmentManager.cs" />
     <Compile Include="Assets\Game\Script\Movement\Mover.cs" />
     <Compile Include="Assets\Testing\Script\Inventory\InventorySlot.cs" />
@@ -81,10 +83,13 @@
     <Compile Include="Assets\Game\Script\Combat\Level.cs" />
     <Compile Include="Assets\Game\Script\Combat\PickUpType.cs" />
     <Compile Include="Assets\Testing\Script\Item\Item.cs" />
-    <Compile Include="Assets\Game\Script\PickUp\PickUp.cs" />
-    <Compile Include="Assets\Testing\Script\Stat\CharacterStat.cs" />
     <Compile Include="Assets\Testing\Script\Stat\Stat.cs" />
-    <Compile Include="Assets\Testing\Script\Stat\PlayerStat.cs" />
+    <Compile Include="Assets\Game\Script\PickUp\PickUp.cs" />
+    <Compile Include="Assets\Testing\Script\Controller\EnemyController.cs" />
+    <Compile Include="Assets\Testing\Script\PlayerManager.cs" />
+    <Compile Include="Assets\Testing\Script\Enemy.cs" />
+    <Compile Include="Assets\Testing\Script\Stat\EnemyStat.cs" />
+    <Compile Include="Assets\Testing\Script\CharacterCombat.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
