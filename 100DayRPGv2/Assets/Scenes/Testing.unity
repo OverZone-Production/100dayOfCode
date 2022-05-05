@@ -3394,6 +3394,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lookRadius: 5
+  target: {fileID: 682857872}
+  targetStats: {fileID: 682857880}
 --- !u!54 &1883852472
 Rigidbody:
   m_ObjectHideFlags: 0

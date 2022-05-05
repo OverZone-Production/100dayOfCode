@@ -189,3 +189,13 @@ I don't really know what I mess up so I will create a new project and redo all m
 **Thoughts:** - 
 
 **Link to work:**
+
+---
+
+## Day 18 - May 5, 2022 
+
+**Today's Progress:** - Enemy combat just wouldn't attack the player
+
+**Thoughts:** - and I don't know why. plz help!!!
+
+**Link to work:**

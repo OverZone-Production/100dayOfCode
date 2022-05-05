@@ -12,20 +12,21 @@ public class CharacterCombat : MonoBehaviour
 
     void Start()
     {
-        myStats = GetComponent<CharacterStat>();   
+        myStats = GetComponent<CharacterStat>();
     }
 
     void Update()
     {
-        attackCooldown -= Time.deltaTime;    
+        attackCooldown -= Time.deltaTime;
     }
 
-    public void Attack (CharacterStat targetStat)
+    public void Attack (CharacterStat targetStats)
     {
         if (attackCooldown <= 0f)
         {
-            targetStat.TakeDamage(myStats.damage.GetValue());
+            targetStats.TakeDamage(myStats.damage.GetValue());
             attackCooldown = 1f / attackSpeed;
         }
-    } 
+        
+    }
 }

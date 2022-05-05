@@ -5,53 +5,59 @@ using UnityEngine.AI;
 
 public class EnemyController : MonoBehaviour
 {
-    public float lookRadius = 10f;
+	public float lookRadius = 10f;  // Detection range for player
 
-    Transform target;
-    NavMeshAgent agent;
-    CharacterCombat combat;
+	public GameObject target;   // Reference to the player
+	public CharacterStat targetStats;
+	NavMeshAgent agent; // Reference to the NavMeshAgent
+	CharacterCombat combat;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        target = PlayerManager.instance.player.transform;
-        agent = GetComponent<NavMeshAgent>();
-        combat = GetComponent<CharacterCombat>();
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        float distance = Vector3.Distance(target.position, transform.position);
+	// Use this for initialization
+	void Start()
+	{
+		agent = GetComponent<NavMeshAgent>();
+		combat = GetComponent<CharacterCombat>();
+	}
 
-        if (distance <= lookRadius)
-        {
-            agent.SetDestination(target.position);
+	// Update is called once per frame
+	void Update()
+	{
+		// Distance to the target
+		float distance = Vector3.Distance(target.transform.position, transform.position);
 
-            if (distance <= agent.stoppingDistance)
-            {
-                CharacterStat targetStats = target.GetComponent<CharacterStat>();
-                if (targetStats != null)
-                {
-                    combat.Attack(targetStats);
-                }
-                
-                FaceTarget();
-            }
-        }
-    }
+		// If inside the lookRadius
+		if (distance <= lookRadius)
+		{
+			// Move towards the target
+			agent.SetDestination(target.transform.position);
 
-    void FaceTarget()
-    {
-        Vector3 direction = (target.position - transform.position).normalized;
-        Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0f, direction.z));
-        transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
-    }
+			// If within attacking distance
+			if (distance <= agent.stoppingDistance)
+			{
+				if (targetStats != null)
+				{
+					combat.Attack(targetStats);
+				}
 
-    void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, lookRadius);
-    }
+				FaceTarget();   // Make sure to face towards the target
+			}
+		}
+	}
+
+	// Rotate to face the target
+	void FaceTarget()
+	{
+		Vector3 direction = (target.transform.position - transform.position).normalized;
+		Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
+		transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
+	}
+
+	// Show the lookRadius in editor
+	void OnDrawGizmosSelected()
+	{
+		Gizmos.color = Color.red;
+		Gizmos.DrawWireSphere(transform.position, lookRadius);
+	}
 
 }
