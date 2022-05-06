@@ -199,3 +199,13 @@ I don't really know what I mess up so I will create a new project and redo all m
 **Thoughts:** - and I don't know why. plz help!!!
 
 **Link to work:**
+
+---
+
+## Day 19 - May 6, 2022 
+
+**Today's Progress:** - I mess up the player animation and now my player character is broken
+
+**Thoughts:** - 
+
+**Link to work:**
