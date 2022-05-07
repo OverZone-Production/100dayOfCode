@@ -209,3 +209,13 @@ I don't really know what I mess up so I will create a new project and redo all m
 **Thoughts:** - 
 
 **Link to work:**
+
+---
+
+## Day 20 - May 7, 2022 
+
+**Today's Progress:** - Trying to combine what I already know with what I learned from the tutorial
+
+**Thoughts:** - I really can't do it. I just don't know where to start or how to start. I feel so ashame of myself that I couldn't do anything. I'm not going upload my unity project because it's fill with error and stuff I can't fix. 
+
+**Link to work:**
