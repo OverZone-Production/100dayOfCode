@@ -219,3 +219,24 @@ I don't really know what I mess up so I will create a new project and redo all m
 **Thoughts:** - I really can't do it. I just don't know where to start or how to start. I feel so ashame of myself that I couldn't do anything. I'm not going upload my unity project because it's fill with error and stuff I can't fix. 
 
 **Link to work:**
+
+---
+
+## Day 21 - May 8, 2022 
+
+**Today's Progress:** - Learn how to make and enemy route with P'Ada
+
+**Thoughts:** -  
+
+**Link to work:** RPG
+
+
+---
+
+## Day 22 - May 9, 2022 
+
+**Today's Progress:** - Rebuilding a new player system
+
+**Thoughts:** -  
+
+**Link to work:** 
