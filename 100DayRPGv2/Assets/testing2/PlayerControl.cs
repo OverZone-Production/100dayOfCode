@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class PlayerControl : MonoBehaviour
 {
+    public Interactable focus;
     PlayerMover mover;
     void Start()
     {
@@ -28,8 +29,18 @@ public class PlayerControl : MonoBehaviour
             if (Input.GetMouseButtonDown(0))
             {
                 mover.Move(hit.point);
+
+                RemoveFocus();
             }
         }
+    }
+
+    void RemoveFocus()
+    {
+        if (focus != null)
+            focus.OnDefocused();
+        focus = null;
+        mover.StopFollowTarget();
     }
 
     public void Interaction()
@@ -41,9 +52,26 @@ public class PlayerControl : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(1))
             {
-                Debug.Log("Trying To Interact");
+                Interactable clickedInteractable = hit.collider.GetComponent<Interactable>();
+                if (clickedInteractable != null)
+                {
+                    SetFocus(clickedInteractable);
+                }
             }
         }
+    }
+
+    void SetFocus(Interactable newFocus)
+    {
+        if (newFocus != focus)
+        {
+            if (focus != null)
+                focus.OnDefocused();
+            focus = newFocus;
+            mover.FolllowTarget(newFocus);
+        }
+
+        newFocus.OnFocused(transform);
     }
 
     private static Ray GetMouseRay()
