@@ -68,6 +68,7 @@ public class PlayerControl : MonoBehaviour
             if (focus != null)
                 focus.OnDefocused();
             focus = newFocus;
+            Debug.Log("moving");
             mover.FolllowTarget(newFocus);
         }
 

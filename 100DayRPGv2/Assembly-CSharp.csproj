@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>8.0</LangVersion>
+    <LangVersion>latest</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -53,9 +53,6 @@
     <UnityVersion>2021.1.25f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Assets\Game\Script\Combat\Fighter.cs" />
     <Compile Include="Assets\Game\Script\Core\IAction.cs" />
     <Compile Include="Assets\Testing\Script\Enemy.cs" />
@@ -82,7 +79,7 @@
     <Compile Include="Assets\Testing\Script\PlayerManager.cs" />
     <Compile Include="Assets\Testing\Script\Stat\PlayerStat.cs" />
     <Compile Include="Assets\Testing\Script\EquipmentManager.cs" />
-    <Compile Include="Assets\PlayerMover.cs" />
+    <Compile Include="Assets\testing2\PlayerMover.cs" />
     <Compile Include="Assets\Game\Script\Movement\Mover.cs" />
     <Compile Include="Assets\Testing\Script\Inventory\InventorySlot.cs" />
     <Compile Include="Assets\testing2\PlayerControl.cs" />
@@ -95,6 +92,8 @@
     <Compile Include="Assets\Testing\Script\Item\Item.cs" />
     <Compile Include="Assets\Testing\Script\Stat\Stat.cs" />
     <Compile Include="Assets\Game\Script\PickUp\PickUp.cs" />
+    <Compile Include="Assets\testing2\Pickup.cs" />
+    <Compile Include="Assets\testing2\TempStat.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

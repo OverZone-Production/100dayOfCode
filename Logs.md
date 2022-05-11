@@ -250,3 +250,13 @@ I don't really know what I mess up so I will create a new project and redo all m
 **Thoughts:** -  
 
 **Link to work:** 
+
+---
+
+## Day 24 - May 11, 2022 
+
+**Today's Progress:** - player interation system pt2
+
+**Thoughts:** -  
+
+**Link to work:** 

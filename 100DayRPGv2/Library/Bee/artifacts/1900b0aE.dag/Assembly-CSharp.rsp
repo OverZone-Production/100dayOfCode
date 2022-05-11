@@ -300,7 +300,7 @@
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.25f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Numerics.Vectors.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.25f1/Editor/Data/NetStandard/Extensions/2.0.0/System.Runtime.InteropServices.WindowsRuntime.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2021.1.25f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll"
--r:"C:/Users/Chuan/Desktop/Programming/Unity40hr/workshop/100DayRPGv2/Library/PackageCache/com.unity.visualscripting@1.6.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"C:/Users/Chuan/Desktop/webDev/100dayOfCode/100DayRPGv2/Library/PackageCache/com.unity.visualscripting@1.6.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.2D.Sprite.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.PlasticSCM.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Rider.Editor.ref.dll"
@@ -335,7 +335,6 @@
 "Assets/Game/Script/Core/IAction.cs"
 "Assets/Game/Script/Movement/Mover.cs"
 "Assets/Game/Script/PickUp/PickUp.cs"
-"Assets/PlayerMover.cs"
 "Assets/Testing/Script/CharacterAnimator.cs"
 "Assets/Testing/Script/CharacterCombat.cs"
 "Assets/Testing/Script/Controller/CameraController.cs"
@@ -357,7 +356,10 @@
 "Assets/Testing/Script/Stat/EnemyStat.cs"
 "Assets/Testing/Script/Stat/PlayerStat.cs"
 "Assets/Testing/Script/Stat/Stat.cs"
+"Assets/testing2/Pickup.cs"
 "Assets/testing2/PlayerControl.cs"
+"Assets/testing2/PlayerMover.cs"
+"Assets/testing2/TempStat.cs"
 -langversion:8.0
 
 /deterministic
